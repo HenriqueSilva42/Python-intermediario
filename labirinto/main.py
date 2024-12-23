@@ -16,9 +16,18 @@ def main():
 
     if escolha == '1':  # Jogar
         labirinto = criar_labirinto(args.dificuldade)
-        imprimir_labirinto(labirinto)
         jogador = Jogador(args.name, labirinto)
-        jogador.escutar_comandos()
+
+        while True:
+            imprimir_labirinto(labirinto)
+            movimento = input("Use as teclas (w/a/s/d) para mover: ")
+
+            if movimento in ['w', 'a', 's', 'd']:
+                if jogador.mover(movimento):
+                    print(f"Você ganhou! Pontuação: {jogador.pontuacao}")
+                    break
+            else:
+                print("Comando inválido! Use w, a, s ou d.")
 
     elif escolha == '2':  # Instruções
         imprime_instrucoes()
@@ -29,4 +38,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
