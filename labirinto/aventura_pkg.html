@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>aventura_pkg Documentation</title>
+  </head>
+  <body>
+    <h1>aventura_pkg Documentation</h1>
+
+    <h2>Module: labirinto</h2>
+    <p>
+      <strong>criar_labirinto(dificuldade: int) → list</strong><br>
+      Cria um labirinto aleatório com base no nível de dificuldade.
+    </p>
+    <p><strong>Parameters:</strong><br>
+      <code>dificuldade</code>: Nível de dificuldade que altera o tamanho do labirinto.
+    </p>
+    <p><strong>Returns:</strong><br>
+      Lista de listas representando o labirinto.
+    </p>
+
+    <p>
+      <strong>imprimir_labirinto(labirinto: list) → None</strong><br>
+      Imprime o labirinto na tela.
+    </p>
+    <p><strong>Parameters:</strong><br>
+      <code>labirinto</code>: Labirinto a ser impresso.
+    </p>
+
+    <h2>Module: jogador</h2>
+    <p>
+      <strong>Jogador class</strong><br>
+      Representa o jogador no jogo.
+    </p>
+
+    <p>
+      <strong>__init__(self, nome: str, labirinto: list)</strong><br>
+      Inicializa o jogador com nome e labirinto.
+    </p>
+    <p><strong>Parameters:</strong><br>
+      <code>nome</code>: Nome do jogador.<br>
+      <code>labirinto</code>: Labirinto no qual o jogador está.
+    </p>
+
+    <p>
+      <strong>mover(self, direcao: str)</strong><br>
+      Move o jogador em uma direção específica.
+    </p>
+    <p><strong>Parameters:</strong><br>
+      <code>direcao</code>: Direção para mover o jogador (w, a, s, d).
+    </p>
+
+    <p>
+      <strong>escutar_comandos(self)</strong><br>
+      Escuta as teclas pressionadas e movimenta o jogador de acordo com a tecla.
+    </p>
+
+    <h2>Module: utils</h2>
+    <p>
+      <strong>imprime_instrucoes()</strong><br>
+      Imprime as instruções do jogo no terminal com formatação rica.
+    </p>
+
+    <p>
+      <strong>imprime_menu()</strong><br>
+      Imprime o menu principal do jogo.
+    </p>
+  </body>
+</html>
